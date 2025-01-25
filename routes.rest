@@ -2,68 +2,68 @@
 ### Get all users
 GET http://localhost:3000/users
 
-### Get user by id
-GET http://localhost:3000/users/6792e9c8363247ebc05b5092
+### Get a single user by id
+GET http://localhost:3000/users/6792e79e363247ebc05b5091
 
 ### Create user
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "firstName" : "Alessandro",
-    "lastName" : "Melendez",
-    "address" : "Trujano 124 South",
-    "email" : "alessandro@gmail.com",
+    "firstName" : "Julio",
+    "lastName" : "Bond",
+    "address" : "Gardenia 567 North",
+    "email" : "james@gmail.com",
     "favoriteColor" : "blue",
-    "phone" : "8712-789952",
-    "birthday" : "September 7"
+    "phone" : "8712546585",
+    "birthday" : "June 6"
 }
 
 ### Put or update user
-PUT http://localhost:3000/users/6792e9c8363247ebc05b5092
+PUT http://localhost:3000/users/6795552d707d977657796c79
 Content-Type: application/json
 
 {
-    "firstName" : "Aida",
-    "lastName" : "Melendez",
-    "address" : "Trujano 124 South",
-    "email" : "sara@gmail.com",
-    "favoriteColor" : "purple",
-    "phone" : "8712-253636",
-    "birthday" : "June 22"
+    "firstName" : "Cris",
+    "lastName" : "Ronaldo",
+    "address" : "Madrid Street 897 N.",
+    "email" : "cr7@gmail.com",
+    "favoriteColor" : "white",
+    "phone" : "8712253355",
+    "birthday" : "July 23"
 }
 
 ### Delete user
-DELETE http://localhost:3000/users/6792e9c8363247ebc05b5092
+DELETE http://localhost:3000/users/6795552d707d977657796c79
 
 // LOCALHOST for checking comments
 ### Get all comments
 GET http://localhost:3000/comments
 
-### Get comment by id
-GET http://localhost:3000/comments/6792ebe6363247ebc05b5096
+### Get a single comment by id
+GET http://localhost:3000/comments/6792ec28363247ebc05b5097
 
 ### Create comment
 POST http://localhost:3000/comments
 Content-Type: application/json
 
 {
-    "firstName" : "Alessandro",
+    "firstName" : "Dan",
     "lastName" : "Melendez",
-    "date" : "01/05/25",
-    "comment" : "This is creating a new comment."
+    "date" : "01/06/26",
+    "comment" : "This is working."
 }
 
 ### Put or update comment
-PUT http://localhost:3000/comments/6792ebe6363247ebc05b5096
+PUT http://localhost:3000/comments/67956a92e43a5170f3cf10d4
 Content-Type: application/json
 
 {
-    "firstName" : "Aida",
-    "lastName" : "Melendez",
+    "firstName" : "Cristina",
+    "lastName" : "Hernandez",
     "date" : "01/23/25",
-    "comment" : "This is updating a comment."
+    "comment" : "This is great."
 }
 
 ### Delete comment
-DELETE http://localhost:3000/comments/6792ebe6363247ebc05b5096
+DELETE http://localhost:3000/comments/67956a92e43a5170f3cf10d4
