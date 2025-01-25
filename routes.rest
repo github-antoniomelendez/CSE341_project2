@@ -1,0 +1,69 @@
+//LOCALHOST for checking users
+### Get all users
+GET http://localhost:3000/users
+
+### Get user by id
+GET http://localhost:3000/users/6792e9c8363247ebc05b5092
+
+### Create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName" : "Alessandro",
+    "lastName" : "Melendez",
+    "address" : "Trujano 124 South",
+    "email" : "alessandro@gmail.com",
+    "favoriteColor" : "blue",
+    "phone" : "8712-789952",
+    "birthday" : "September 7"
+}
+
+### Put or update user
+PUT http://localhost:3000/users/6792e9c8363247ebc05b5092
+Content-Type: application/json
+
+{
+    "firstName" : "Aida",
+    "lastName" : "Melendez",
+    "address" : "Trujano 124 South",
+    "email" : "sara@gmail.com",
+    "favoriteColor" : "purple",
+    "phone" : "8712-253636",
+    "birthday" : "June 22"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/6792e9c8363247ebc05b5092
+
+// LOCALHOST for checking comments
+### Get all comments
+GET http://localhost:3000/comments
+
+### Get comment by id
+GET http://localhost:3000/comments/6792ebe6363247ebc05b5096
+
+### Create comment
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+    "firstName" : "Alessandro",
+    "lastName" : "Melendez",
+    "date" : "01/05/25",
+    "comment" : "This is creating a new comment."
+}
+
+### Put or update comment
+PUT http://localhost:3000/comments/6792ebe6363247ebc05b5096
+Content-Type: application/json
+
+{
+    "firstName" : "Aida",
+    "lastName" : "Melendez",
+    "date" : "01/23/25",
+    "comment" : "This is updating a comment."
+}
+
+### Delete comment
+DELETE http://localhost:3000/comments/6792ebe6363247ebc05b5096
